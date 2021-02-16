@@ -1,0 +1,73 @@
+.forms-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 40px;
+  min-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  margin: 0;
+}
+.strike {
+  text-decoration: line-through;
+}
+
+input {
+  width: 99%;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+}
+
+input::placeholder {
+  color: #bbb;
+}
+.add-button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #ff1493;
+  color: #eee;
+  font-size: 1.5rem;
+}
+
+.todo-container {
+  padding-left: 21px;
+  margin: 0;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.idgf {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin: 5px;
+  height: 30px;
+  border-radius: 5px;
+  color: #ff69b4;
+  border-color: #ff69b4;
+  box-shadow: none;
+  background: none;
+}
+.remove-button {
+  border: none;
+  background: none;
+}
