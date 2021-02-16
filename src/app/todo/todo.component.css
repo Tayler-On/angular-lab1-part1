@@ -60,7 +60,7 @@
   height: 30px;
   border-radius: 5px;
   color: #ff69b4;
-  border-color: #ff69b4;
+  border: 1px solid #ff69b4;
   box-shadow: none;
   background: none;
 }
