@@ -8,21 +8,18 @@
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-h1 {
+.header {
   margin: 0;
 }
-.strike {
-  text-decoration: line-through;
-}
 
-input {
+.input {
   width: 99%;
   font-size: 1.5rem;
   border-radius: 5px;
   border: 1px solid #bbb;
 }
 
-input::placeholder {
+.input::placeholder {
   color: #bbb;
 }
 .add-button {
@@ -53,12 +50,12 @@ input::placeholder {
   align-items: center;
 }
 
-.idgf {
+.complete-task-text {
   display: flex;
   align-items: center;
 }
 
-.btn {
+.complete-button {
   margin: 5px;
   height: 30px;
   border-radius: 5px;
@@ -70,4 +67,8 @@ input::placeholder {
 .remove-button {
   border: none;
   background: none;
+}
+
+.strike {
+  text-decoration: line-through;
 }

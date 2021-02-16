@@ -1,8 +1,9 @@
 <main class="forms-container">
-  <h1>TODO List</h1>
+  <h1 class="header">TODO List</h1>
   <form #filterForm="ngForm" (input)="setSearchTerm(filterForm)">
     <p>A place to store your todos</p>
     <input
+      class="input"
       type="text"
       id="todo"
       name="todo"
@@ -15,15 +16,17 @@
       <div class="task-container">
         <li *ngFor="let todo of filterTodos(searchTodo); index as i">
           <div class="task">
-            <div class="idgf">
+            <div class="complete-task-text">
               <button
-                class="btn"
+                class="complete-button"
                 *ngIf="!todo.completed"
                 (click)="completed(todo)"
               >
                 Complete
               </button>
-              <p [ngClass]="{ strike: todo.completed }">{{ todo.task }}</p>
+              <p [ngClass]="{ strike: todo.completed }">
+                {{ todo.task }}
+              </p>
             </div>
             <button class="remove-button" (click)="removeTask(i)">X</button>
           </div>
@@ -33,6 +36,7 @@
   </form>
   <form #addForm="ngForm" (ngSubmit)="addTask(addForm, todos)">
     <input
+      class="input"
       type="text"
       id="newtask"
       name="newtask"
